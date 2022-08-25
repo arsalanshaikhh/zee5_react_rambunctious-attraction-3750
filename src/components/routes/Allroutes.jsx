@@ -1,8 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../Home";
-import Tvshows from "./../Tvshows";
-import Movies from "./../Movies";
+import Home from './Home';
+import Tvshows from './Tvshows';
+import Movies from './Movies';
+
 
 function Allroutes() {
   return (

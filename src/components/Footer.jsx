@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 import {
   Flex,
@@ -14,6 +15,8 @@ import {
 } from "@chakra-ui/react";
 
 function Footer() {
+  // const navigate = useNavigate();
+
   return (
     <div>
       <SimpleGrid
@@ -26,7 +29,7 @@ function Footer() {
       >
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
+            <ListItem fontWeight="bold">Hindi Movies</ListItem>
             <ListItem>Hindi Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
@@ -38,8 +41,8 @@ function Footer() {
 
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
-            <ListItem>Hindi Movies</ListItem>
+            <ListItem fontWeight="bold">Movies By Genre</ListItem>
+            <ListItem>Movies By Genre</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
             <ListItem>Kannada Movies</ListItem>
@@ -49,8 +52,8 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
-            <ListItem>Hindi Movies</ListItem>
+            <ListItem fontWeight="bold">Movies By Celeb</ListItem>
+            <ListItem>Movies By Celeb</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
             <ListItem>Kannada Movies</ListItem>
@@ -60,8 +63,8 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
-            <ListItem>Hindi Movies</ListItem>
+            <ListItem fontWeight="bold">Movies By Year</ListItem>
+            <ListItem>Movies By Year</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
             <ListItem>Kannada Movies</ListItem>
@@ -71,8 +74,8 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
-            <ListItem>Hindi Movies</ListItem>
+            <ListItem fontWeight="bold">Top Bollywood Movies</ListItem>
+            <ListItem>Top Bollywood Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
             <ListItem>Kannada Movies</ListItem>
@@ -82,8 +85,8 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
-            <ListItem>Hindi Movies</ListItem>
+            <ListItem fontWeight="bold">Top South Movies</ListItem>
+            <ListItem>Movies By Language</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
             <ListItem>Kannada Movies</ListItem>
@@ -160,14 +163,19 @@ function Footer() {
           </Square>
 
           <Center>
-            <Image
-              bg="white"
-              h="40px"
-              borderRadius="50%"
-              border="1px solid white"
-              src="https://img.icons8.com/windows/344/facebook-new.png"
-              alt="Facebook"
-            />
+            {/* <NavLink to={"https://www.facebook.com/ZEE5/"}> */}
+
+            <a href="https://www.facebook.com/ZEE5/">
+              <Image
+                bg="white"
+                h="40px"
+                borderRadius="50%"
+                border="1px solid white"
+                src="https://img.icons8.com/windows/344/facebook-new.png"
+                alt="Facebook"
+              />
+            </a>
+            {/* </NavLink> */}
           </Center>
           <Center>
             <Image
@@ -208,7 +216,7 @@ function Footer() {
       {/*  */}
 
       <SimpleGrid
-        columns={[1, 3, 6, 6]}
+        columns={[1, 3, 5, 5]}
         spacing="2%"
         p="3% 5%"
         color="white"
@@ -217,7 +225,7 @@ function Footer() {
       >
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
+            <ListItem fontWeight="bold">Popular TV Shows</ListItem>
             <ListItem>Hindi Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
@@ -229,7 +237,7 @@ function Footer() {
 
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
+            <ListItem fontWeight="bold">Premium Movies</ListItem>
             <ListItem>Hindi Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
@@ -240,7 +248,7 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
+            <ListItem fontWeight="bold">Popular LIVE TV Channels</ListItem>
             <ListItem>Hindi Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
@@ -251,7 +259,7 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
+            <ListItem fontWeight="bold">Popular Web Series</ListItem>
             <ListItem>Hindi Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
@@ -262,18 +270,7 @@ function Footer() {
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
-            <ListItem>Hindi Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
-          </UnorderedList>
-        </Box>
-        <Box w="1fr">
-          <UnorderedList listStyleType="none" textAlign="left">
-            <ListItem fontWeight="bold">Movies By Language</ListItem>
+            <ListItem fontWeight="bold">Bollywood Top Celebrities</ListItem>
             <ListItem>Hindi Movies</ListItem>
             <ListItem>Telgu Movies</ListItem>
             <ListItem>Tamil Movies</ListItem>
@@ -283,7 +280,6 @@ function Footer() {
           </UnorderedList>
         </Box>
       </SimpleGrid>
-      {/*  */}
 
       <Stack color="white" bg="rgb(15,6,23)" w="100%" p="3% 5%">
         <Box>

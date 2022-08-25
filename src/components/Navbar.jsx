@@ -8,6 +8,7 @@ import {
   Flex,
   Square,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 import { HamburgerIcon, QuestionIcon, DragHandleIcon } from "@chakra-ui/icons";
 
@@ -32,7 +33,7 @@ function Navbar() {
       w="100%"
       justifyContent="space-between"
     >
-      <Flex w="35%" justifyContent="space-evenly" alignItems="align">
+      <Flex w="50%" justifyContent="space-evenly" alignItems="align">
         <Center>
           <Image
             h="50px"
@@ -42,11 +43,11 @@ function Navbar() {
         </Center>
 
         <Square color="white">
-          <Text>Home</Text>
+          <Link to="/">Home</Link>
         </Square>
 
         <Square color="white">
-          <Text>TV Shows</Text>
+          <Link to="/tvshows">TV Shows</Link>
         </Square>
 
         <Square color="white">
@@ -54,11 +55,31 @@ function Navbar() {
         </Square>
 
         <Square color="white">
+          <Text>Web Series</Text>
+        </Square>
+
+        <Square color="white">
+          <Text>News</Text>
+        </Square>
+
+        <Square color="white">
+          <Text>Eduauraa</Text>
+        </Square>
+
+        <Square color="white">
+          <Text>Live TV</Text>
+        </Square>
+
+        <Square color="white">
+          <Text>Music</Text>
+        </Square>
+
+        <Square color="white">
           <DragHandleIcon boxSize={5} />
         </Square>
       </Flex>
 
-      <Flex w="50%" justifyContent="space-evenly" alignItems="align">
+      <Flex w="45%" justifyContent="space-evenly" alignItems="align">
         <Square color="white" flexGrow="7">
           <Input
             isInvalid
@@ -69,7 +90,7 @@ function Navbar() {
         </Square>
 
         <Square color="white" flexGrow="1">
-          <QuestionIcon boxSize={6} />
+          <QuestionIcon boxSize={4} />
         </Square>
 
         <Square color="white" flexGrow="1">
