@@ -42,56 +42,56 @@ function Footer() {
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Movies By Genre</ListItem>
-            <ListItem>Movies By Genre</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>Action Movies</ListItem>
+            <ListItem>Comedy Movies</ListItem>
+            <ListItem>Romantic Movies</ListItem>
+            <ListItem>Horror Movies</ListItem>
+            <ListItem>Crime Movies</ListItem>
+            <ListItem textDecoration="">Thriller Movies</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Movies By Celeb</ListItem>
-            <ListItem>Movies By Celeb</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>SRK Movies</ListItem>
+            <ListItem>Salman Khan Movies</ListItem>
+            <ListItem>Amitabh B Movies</ListItem>
+            <ListItem>Akshay k Movies</ListItem>
+            <ListItem>Sunny Leone Movies</ListItem>
+            <ListItem textDecoration="">Amir Khan Movies</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Movies By Year</ListItem>
-            <ListItem>Movies By Year</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>2022 Movies</ListItem>
+            <ListItem>2021 Movies</ListItem>
+            <ListItem>2020 Movies</ListItem>
+            <ListItem>2019 Movies</ListItem>
+            <ListItem>2018 Movies</ListItem>
+            <ListItem textDecoration="">2017 Movies</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Top Bollywood Movies</ListItem>
-            <ListItem>Top Bollywood Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>Zero</ListItem>
+            <ListItem>Race 3</ListItem>
+            <ListItem>Don</ListItem>
+            <ListItem>Doom 3</ListItem>
+            <ListItem>Race</ListItem>
+            <ListItem textDecoration="">Kedarnath</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Top South Movies</ListItem>
-            <ListItem>Movies By Language</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>RRR</ListItem>
+            <ListItem>Valimia</ListItem>
+            <ListItem>Bangarraju</ListItem>
+            <ListItem>Bahubali</ListItem>
+            <ListItem>Bahubali 2</ListItem>
+            <ListItem textDecoration="">Pushpa</ListItem>
           </UnorderedList>
         </Box>
       </SimpleGrid>
@@ -226,56 +226,52 @@ function Footer() {
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Popular TV Shows</ListItem>
-            <ListItem>Hindi Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>Kumkum Bhagya</ListItem>
+            <ListItem>Kundli Bhagya</ListItem>
+            <ListItem>Bhagya Lakshmi</ListItem>
+            <ListItem>Tujhse Hai Raabta</ListItem>
+            <ListItem>Yum Se</ListItem>
           </UnorderedList>
         </Box>
 
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Premium Movies</ListItem>
-            <ListItem>Hindi Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>Hemlet</ListItem>
+            <ListItem>200 halla Ho</ListItem>
+            <ListItem>14 Phare</ListItem>
+            <ListItem>Gial 100</ListItem>
+            <ListItem>Go</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Popular LIVE TV Channels</ListItem>
-            <ListItem>Hindi Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>NDTV</ListItem>
+            <ListItem>Zee News</ListItem>
+            <ListItem>Aaj Tak</ListItem>
+            <ListItem>Zee Marathi</ListItem>
+            <ListItem>&TV</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Popular Web Series</ListItem>
-            <ListItem>Hindi Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
-            <ListItem textDecoration="">Bengali Movies</ListItem>
+            <ListItem>Sunflower</ListItem>
+            <ListItem>Jeet Ki Zid</ListItem>
+            <ListItem>Fast</ListItem>
+            <ListItem>Sea</ListItem>
+            <ListItem>20/11</ListItem>
           </UnorderedList>
         </Box>
         <Box w="1fr">
           <UnorderedList listStyleType="none" textAlign="left">
             <ListItem fontWeight="bold">Bollywood Top Celebrities</ListItem>
-            <ListItem>Hindi Movies</ListItem>
-            <ListItem>Telgu Movies</ListItem>
-            <ListItem>Tamil Movies</ListItem>
-            <ListItem>Kannada Movies</ListItem>
-            <ListItem>Marathi Movies</ListItem>
+            <ListItem>Sunny Leone</ListItem>
+            <ListItem>Disha Patani</ListItem>
+            <ListItem>Nora Fatehi</ListItem>
+            <ListItem>SRK</ListItem>
+            <ListItem>Salman Khan</ListItem>
             <ListItem textDecoration="">Bengali Movies</ListItem>
           </UnorderedList>
         </Box>

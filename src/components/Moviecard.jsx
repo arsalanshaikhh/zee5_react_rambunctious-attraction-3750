@@ -8,9 +8,13 @@ import {
   Icon,
   chakra,
   Tooltip,
+  Button,
+  Text,
+  StylesProvider,
 } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
-import { FiShoppingCart } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import styles from "./style/Moviecard.module.css";
 
 const data = {
   isNew: true,
@@ -59,10 +63,40 @@ function ProductAddToCart({ props }) {
   // const { id, thumbnails } = props;
   console.log(props);
   return (
-    <Flex p={50} w="full" alignItems="center" justifyContent="center">
-      <Box
+    <Flex w="full" alignItems="center" justifyContent="center">
+      <Box className={styles.box}>
+        <div>
+          {/* <img
+          src={props.snippet.thumbnails.high.url}
+          alt={props.snippet.title}
+        /> */}
+          <Image
+            // boxSize="150px"
+            borderRadius="10px"
+            objectFit="cover"
+            src={props.snippet.thumbnails.medium.url}
+            alt={props.snippet.title}
+          />
+          {/* <h1>{props.snippet.title}</h1> */}
+          <Text pt="10px" pb="10px" fontSize="xl">
+            {props.title}
+          </Text>
+        </div>
+        <Link to={`/product/${props.id}`}>
+          <button
+            colorScheme="white"
+            variant="outline"
+            size="sm"
+            className={styles.butt}
+          >
+            Watch
+          </button>
+        </Link>
+      </Box>
+
+      {/* <Box
         bg={useColorModeValue("white", "gray.800")}
-        maxW="sm"
+        maxW="200px"
         borderWidth="1px"
         rounded="lg"
         shadow="lg"
@@ -99,10 +133,11 @@ function ProductAddToCart({ props }) {
               as="h4"
               lineHeight="tight"
               isTruncated
+              overflow="hidden"
             >
               {props.snippet.title}
             </Box>
-            <Tooltip
+            {/* <Tooltip
               label="Add to cart"
               bg="white"
               placement={"top"}
@@ -112,9 +147,9 @@ function ProductAddToCart({ props }) {
               <chakra.a href={"#"} display={"flex"}>
                 <Icon as={FiShoppingCart} h={7} w={7} alignSelf={"center"} />
               </chakra.a>
-            </Tooltip>
-          </Flex>
-
+            </Tooltip> */}
+      {/* </Flex> */}
+      {/* 
           <Flex justifyContent="space-between" alignContent="center">
             <Rating rating={data.rating} numReviews={data.numReviews} />
             <Box fontSize="2xl" color={useColorModeValue("gray.800", "white")}>
@@ -123,9 +158,9 @@ function ProductAddToCart({ props }) {
               </Box>
               {data.price.toFixed(2)}
             </Box>
-          </Flex>
-        </Box>
-      </Box>
+          </Flex> */}
+      {/* </Box> */}
+      {/* </Box> */}
     </Flex>
   );
 }
