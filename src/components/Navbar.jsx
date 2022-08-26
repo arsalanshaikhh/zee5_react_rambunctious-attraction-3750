@@ -8,11 +8,18 @@ import {
   Flex,
   Square,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { HamburgerIcon, QuestionIcon, DragHandleIcon } from "@chakra-ui/icons";
+import { useAuth } from "./Context/Auth";
 
 function Navbar() {
+  const auth = useAuth();
+  const navigate = useNavigate();
+  const handlelogout = () => {
+    auth.logout();
+    navigate("/");
+  };
   return (
     // <div className={styles.navcon}>
     //   <Box boxSize="sm">
@@ -94,15 +101,30 @@ function Navbar() {
         </Square>
 
         <Square color="white" flexGrow="1">
-          <Button colorScheme="white" variant="outline" size="sm">
-            LOGIN
-          </Button>
+          {!auth.user ? (
+            <Link to="/login">
+              <Button colorScheme="white" variant="outline" size="sm">
+                Login
+              </Button>
+            </Link>
+          ) : (
+            <Button
+              colorScheme="white"
+              variant="outline"
+              size="sm"
+              onClick={handlelogout}
+            >
+              Logout
+            </Button>
+          )}
         </Square>
 
         <Square color="white" flexGrow="1">
-          <Button colorScheme="purple" size="sm">
-            BUY PLAN
-          </Button>
+          <Link to="/signup">
+            <Button colorScheme="purple" size="sm">
+              Signup
+            </Button>
+          </Link>
         </Square>
 
         {/* <Square color="white" flexGrow="1">
