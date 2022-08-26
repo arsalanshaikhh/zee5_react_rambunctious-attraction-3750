@@ -139,19 +139,23 @@ function Footer() {
           </Square>
 
           <Center>
-            <Image
-              h="40px"
-              src="https://www.zee5.com/images/play_store.png?ver=2.51.89"
-              alt="Play Store"
-            />
+            <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did">
+              <Image
+                h="40px"
+                src="https://www.zee5.com/images/play_store.png?ver=2.51.89"
+                alt="Play Store"
+              />
+            </a>
           </Center>
 
           <Center>
-            <Image
-              h="40px"
-              src="https://www.zee5.com/images/app_store.png?ver=2.51.89"
-              alt="App Store"
-            />
+            <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886">
+              <Image
+                h="40px"
+                src="https://www.zee5.com/images/app_store.png?ver=2.51.89"
+                alt="App Store"
+              />
+            </a>
           </Center>
           <Square color="white">
             <Text></Text>
@@ -178,34 +182,40 @@ function Footer() {
             {/* </NavLink> */}
           </Center>
           <Center>
-            <Image
-              bg="white"
-              h="40px"
-              borderRadius="50%"
-              border="1px solid white"
-              src="https://img.icons8.com/windows/344/instagram-new.png"
-              alt="Instagram"
-            />
+            <a href="https://www.instagram.com/zee5/?hl=en">
+              <Image
+                bg="white"
+                h="40px"
+                borderRadius="50%"
+                border="1px solid white"
+                src="https://img.icons8.com/windows/344/instagram-new.png"
+                alt="Instagram"
+              />
+            </a>
           </Center>
           <Center>
-            <Image
-              bg="white"
-              h="40px"
-              borderRadius="50%"
-              border="1px solid white"
-              src="https://img.icons8.com/windows/344/twitter.png"
-              alt="Twitter"
-            />
+            <a href="https://twitter.com/ZEE5India?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <Image
+                bg="white"
+                h="40px"
+                borderRadius="50%"
+                border="1px solid white"
+                src="https://img.icons8.com/windows/344/twitter.png"
+                alt="Twitter"
+              />
+            </a>
           </Center>
           <Center>
-            <Image
-              bg="white"
-              h="40px"
-              borderRadius="50%"
-              border="1px solid white"
-              src="https://img.icons8.com/windows/344/youtube-play.png"
-              alt="Youtube"
-            />
+            <a href="https://www.youtube.com/c/zee5">
+              <Image
+                bg="white"
+                h="40px"
+                borderRadius="50%"
+                border="1px solid white"
+                src="https://img.icons8.com/windows/344/youtube-play.png"
+                alt="Youtube"
+              />
+            </a>
           </Center>
 
           <Square color="white">

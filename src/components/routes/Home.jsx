@@ -15,7 +15,7 @@ function Home() {
   // var key = "AIzaSyAKo2_8Ji4nOCiN1uTPBhgenXAbYm9XBQs";
   const getData = () => {
     axios({
-      url: `http://localhost:8080/bolly`,
+      url: `https://pure-fortress-87288.herokuapp.com/bolly`,
       method: "GET",
     })
       .then((res) => setData(res.data))
@@ -26,6 +26,13 @@ function Home() {
     <>
       <div>
         <CCarousel controls>
+          <CCarouselItem>
+            <CImage
+              className="d-block w-100"
+              src="https://wallpaperaccess.com/full/895201.jpg"
+              alt="Game of Thrones"
+            />
+          </CCarouselItem>
           <CCarouselItem>
             <CImage
               className="d-block w-100 h-80"
@@ -40,13 +47,7 @@ function Home() {
               alt="slide 2"
             />
           </CCarouselItem> */}
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src="https://wallpaperaccess.com/full/895201.jpg"
-              alt="Game of Thrones"
-            />
-          </CCarouselItem>
+
           <CCarouselItem>
             <CImage
               className="d-block w-100"
@@ -56,23 +57,63 @@ function Home() {
           </CCarouselItem>
         </CCarousel>
       </div>
-      <Text pt="10px" fontSize="2xl" bg="rgb(15,6,23)" color="white">
-        Bollywood Movies
-      </Text>
-      <SimpleGrid
-        columns={[1, 3, 3, 6]}
-        spacing="2%"
-        p="3% 5%"
-        color="white"
-        bg="rgb(15,6,23)"
-        w="100%"
-      >
-        <>
-          {data.map((e) => {
-            return <ProductAddToCart key={e.id} props={e}></ProductAddToCart>;
-          })}
-        </>
-      </SimpleGrid>
+      <div>
+        <Text pt="30px" fontSize="2xl" bg="rgb(15,6,23)" color="white">
+          Bollywood Movies
+        </Text>
+        <SimpleGrid
+          columns={[1, 3, 3, 6]}
+          spacing="2%"
+          p="3% 5%"
+          color="white"
+          bg="rgb(15,6,23)"
+          w="100%"
+        >
+          <>
+            {data.map((e) => {
+              return <ProductAddToCart key={e.id} props={e}></ProductAddToCart>;
+            })}
+          </>
+        </SimpleGrid>
+      </div>
+      <div>
+        <Text pt="30px" fontSize="2xl" bg="rgb(15,6,23)" color="white">
+          Bollywood Movies
+        </Text>
+        <SimpleGrid
+          columns={[1, 3, 3, 6]}
+          spacing="2%"
+          p="3% 5%"
+          color="white"
+          bg="rgb(15,6,23)"
+          w="100%"
+        >
+          <>
+            {data.map((e) => {
+              return <ProductAddToCart key={e.id} props={e}></ProductAddToCart>;
+            })}
+          </>
+        </SimpleGrid>
+      </div>
+      <div>
+        <Text pt="30px" fontSize="2xl" bg="rgb(15,6,23)" color="white">
+          Bollywood Movies
+        </Text>
+        <SimpleGrid
+          columns={[1, 3, 3, 6]}
+          spacing="2%"
+          p="3% 5%"
+          color="white"
+          bg="rgb(15,6,23)"
+          w="100%"
+        >
+          <>
+            {data.map((e) => {
+              return <ProductAddToCart key={e.id} props={e}></ProductAddToCart>;
+            })}
+          </>
+        </SimpleGrid>
+      </div>
     </>
   );
 }

@@ -1,25 +1,24 @@
-import React from "react";
-
 import {
   Drawer,
   DrawerBody,
+  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
+  DrawerCloseButton,
   RadioGroup,
-  Radio,
-  Button,
   Stack,
+  Radio,
 } from "@chakra-ui/react";
-import { useDisclosure, useState } from "react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Button } from "@coreui/coreui";
+import { useDisclosure, React } from 'react';
 
-export function Sidemenu() {
+export function PlacementExample() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement, setPlacement] = useState("right");
+  const [placement, setPlacement] = React.useState("right");
 
   return (
-    <div>
+    <>
       <RadioGroup defaultValue={placement} onChange={setPlacement}>
         <Stack direction="row" mb="4">
           <Radio value="top">Top</Radio>
@@ -28,10 +27,9 @@ export function Sidemenu() {
           <Radio value="left">Left</Radio>
         </Stack>
       </RadioGroup>
-      <HamburgerIcon boxSize={6} onClick={onOpen} />
-      {/* <Button colorScheme="blue" onClick={onOpen}>
-        
-      </Button> */}
+      <Button colorScheme="blue" onClick={onOpen}>
+        Open
+      </Button>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
@@ -43,6 +41,6 @@ export function Sidemenu() {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </div>
+    </>
   );
 }

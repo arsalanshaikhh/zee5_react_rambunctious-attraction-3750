@@ -20,7 +20,9 @@ export default function Product() {
   const { id } = param;
   const getData = async () => {
     try {
-      const res = await fetch(`http://localhost:8080/bolly/${id}`);
+      const res = await fetch(
+        `https://pure-fortress-87288.herokuapp.com/bolly/${id}`
+      );
       const data = await res.json();
       setSdata(data);
     } catch (err) {
@@ -31,7 +33,9 @@ export default function Product() {
 
   const getDataUpcom = async () => {
     try {
-      const res = await fetch(`http://localhost:8080/upcom`);
+      const res = await fetch(
+        `https://pure-fortress-87288.herokuapp.com/upcom`
+      );
       const data = await res.json();
       setUdata(data);
     } catch (err) {
