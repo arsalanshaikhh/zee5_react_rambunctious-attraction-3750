@@ -7,80 +7,28 @@ import { Alert } from "@coreui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
 
-function Home() {
+function News() {
   const [data, setData] = useState([]);
   const [bdata, setbData] = useState([]);
   const [hdata, sethData] = useState([]);
   useEffect(() => {
     getData();
-    getDatab();
-    getDatah();
   }, []);
   // var key = "AIzaSyAKo2_8Ji4nOCiN1uTPBhgenXAbYm9XBQs";
   const getData = () => {
     axios({
-      url: `https://pure-fortress-87288.herokuapp.com/Tren`,
+      url: `https://pure-fortress-87288.herokuapp.com/news`,
       method: "GET",
     })
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   };
-  // /////
-  const getDatab = () => {
-    axios({
-      url: `https://pure-fortress-87288.herokuapp.com/bolly`,
-      method: "GET",
-    })
-      .then((res) => setbData(res.data))
-      .catch((err) => console.log(err));
-  };
-  // /////
-  const getDatah = () => {
-    axios({
-      url: `https://pure-fortress-87288.herokuapp.com/holly`,
-      method: "GET",
-    })
-      .then((res) => sethData(res.data))
-      .catch((err) => console.log(err));
-  };
+
   return (
     <>
       <div>
-        <CCarousel controls>
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src="https://wallpaperaccess.com/full/895201.jpg"
-              alt="Game of Thrones"
-            />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100 h-80"
-              src="https://wallpaperaccess.com/full/637343.jpg"
-              alt="slide 1"
-            />
-          </CCarouselItem>
-          {/* <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src="https://wallpaperaccess.com/full/758165.jpg"
-              alt="slide 2"
-            />
-          </CCarouselItem> */}
-
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src="https://wallpaperaccess.com/full/895179.jpg"
-              alt="slide 3"
-            />
-          </CCarouselItem>
-        </CCarousel>
-      </div>
-      <div>
         <Text pt="30px" fontSize="3xl" bg="rgb(15,6,23)" color="white">
-          Trending Movies
+          Today's News
         </Text>
         <SimpleGrid
           columns={[1, 3, 3, 6]}
@@ -99,7 +47,7 @@ function Home() {
       </div>
       <div>
         <Text pt="30px" fontSize="3xl" bg="rgb(15,6,23)" color="white">
-          Bollywood Movies
+          Indian News
         </Text>
         <SimpleGrid
           columns={[1, 3, 3, 6]}
@@ -110,7 +58,7 @@ function Home() {
           w="100%"
         >
           <>
-            {bdata.map((e) => {
+            {data.map((e) => {
               return <ProductAddToCart key={e.id} props={e}></ProductAddToCart>;
             })}
           </>
@@ -118,7 +66,7 @@ function Home() {
       </div>
       <div>
         <Text pt="30px" fontSize="3xl" bg="rgb(15,6,23)" color="white">
-          Hollywood Movies
+          International News
         </Text>
         <SimpleGrid
           columns={[1, 3, 3, 6]}
@@ -129,7 +77,7 @@ function Home() {
           w="100%"
         >
           <>
-            {hdata.map((e) => {
+            {data.map((e) => {
               return <ProductAddToCart key={e.id} props={e}></ProductAddToCart>;
             })}
           </>
@@ -139,4 +87,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default News;

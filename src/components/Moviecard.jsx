@@ -78,7 +78,12 @@ function ProductAddToCart({ props }) {
             alt={props.snippet.title}
           />
           {/* <h1>{props.snippet.title}</h1> */}
-          <Text pt="10px" pb="10px" fontSize="xl">
+          <Text
+            pt="10px"
+            pb="10px"
+            fontSize="xl"
+            style={{ textTransform: "capitalize" }}
+          >
             {props.title}
           </Text>
         </div>

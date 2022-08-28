@@ -20,6 +20,7 @@ function Navbar() {
     auth.logout();
     navigate("/");
   };
+
   return (
     // <div className={styles.navcon}>
     //   <Box boxSize="sm">
@@ -54,11 +55,11 @@ function Navbar() {
         </Square>
 
         <Square color="white">
-          <Link to="/tvshows">TV Shows</Link>
+          <Link to="/news">News</Link>
         </Square>
 
         <Square color="white">
-          <Text>Movies</Text>
+          <Link to="/movies">Movies</Link>
         </Square>
 
         <Square color="white">
@@ -66,7 +67,7 @@ function Navbar() {
         </Square>
 
         <Square color="white">
-          <Text>News</Text>
+          <Text>TV Shows</Text>
         </Square>
 
         <Square color="white">

@@ -7,6 +7,7 @@ import Product from "./Product";
 import { Login } from "./../Pages/Login";
 import { Signup } from "./../Pages/Signup";
 import { ProtectedRoute } from "./../Context/ProtectedRoute";
+import News from "./News";
 
 function Allroutes() {
   return (
@@ -20,7 +21,7 @@ function Allroutes() {
           </ProtectedRoute>
         }
       />
-      <Route path="/tvshows" element={<Tvshows />} />
+      <Route path="/news" element={<News />} />
       <Route path="/movies" element={<Movies />} />
 
       <Route path="/login" element={<Login />}>
