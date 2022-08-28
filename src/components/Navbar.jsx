@@ -12,6 +12,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { HamburgerIcon, QuestionIcon, DragHandleIcon } from "@chakra-ui/icons";
 import { useAuth } from "./Context/Auth";
+import { VerticallyCenter } from "./About";
+import { PlacementExample } from "./Side";
 
 function Navbar() {
   const auth = useAuth();
@@ -43,11 +45,13 @@ function Navbar() {
     >
       <Flex w="50%" justifyContent="space-evenly" alignItems="align">
         <Center>
-          <Image
-            h="50px"
-            src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.88"
-            alt="Zee5"
-          />
+          <Link to="/">
+            <Image
+              h="50px"
+              src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.88"
+              alt="Zee5"
+            />
+          </Link>
         </Center>
 
         <Square color="white">
@@ -98,7 +102,9 @@ function Navbar() {
         </Square>
 
         <Square color="white" flexGrow="1">
-          <QuestionIcon boxSize={4} />
+          {/* <QuestionIcon boxSize={4} /> */}
+
+          <VerticallyCenter />
         </Square>
 
         <Square color="white" flexGrow="1">
@@ -133,7 +139,8 @@ function Navbar() {
         </Square> */}
 
         <Square color="white" flexGrow="1">
-          <HamburgerIcon boxSize={6} />
+          {/* <HamburgerIcon boxSize={6} /> */}
+          <PlacementExample />
         </Square>
       </Flex>
     </Flex>

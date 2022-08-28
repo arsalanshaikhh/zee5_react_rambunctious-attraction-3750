@@ -71,7 +71,7 @@ export default function Product() {
         </div>
       </div>
       <div>
-        <Text pt="10px" fontSize="xl" bg="rgb(15,6,23)" color="white">
+        <Text pt="10px" fontSize="3xl" bg="rgb(15,6,23)" color="white">
           Upcoming Movies
         </Text>
         <SimpleGrid
