@@ -2,7 +2,7 @@
 
 ZEE5 is an Indian subscription video on-demand and over-the-top streaming service, run by Zee Entertainment Enterprises. It was launched in India on 14 February 2018 with content in 12 languages. The ZEE5 mobile app is available on Web, Android, iOS, Smart TVs, among other devices..
 
-AS part of unit 4 construct week I cloned the frontend of zee5 to the best of my ability as individual in the span of 5 days.
+AS part of unit 4 construct week I cloned the zee5 to the best of my ability as individual in the span of 5 days.
 
 
 <!-- ## Tech Stack: -->
