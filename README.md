@@ -16,7 +16,12 @@ AS part of unit 4 construct week I cloned the zee5 to the best of my ability as 
 
 ## Features:
 
-1.Social Sign-up/Sign-in. 2. User authentication from back-end 3. For Data I have created Json Server and deployed it on Heroku. 4.Fetched the data using Axios 5. Added iframe so movies can play upto 4K. 6.With the functionality of play pause ,backward and forward 7.Also added logout functionality.
+1.Social Sign-up/Sign-in. 
+2. User authentication from back-end.
+3. For Data I have created Json Server and deployed it on Heroku. 
+4.Fetched the data using Axios.
+5. Added iframe so movies can play upto 4K. 
+6.With the functionality of play pause ,backward and forward 7.Also added logout functionality.
 
 <h1>Snapshots of our project</h1>
 
