@@ -24,7 +24,7 @@ AS part of unit 4 construct week I cloned the zee5 to the best of my ability as 
 
 ![ScreenShot Tool -20220928051620](https://user-images.githubusercontent.com/88669777/192657654-48d93c8d-9002-4b8d-83bc-ee72623bb79e.png)
 
-2.This is Log-in and Sign-in Page
+2.This is Log-in
 
 ![ScreenShot Tool -20220928050537](https://user-images.githubusercontent.com/88669777/192657734-ddd4c787-0e68-4cb8-82eb-153ee098acdd.png)
 
