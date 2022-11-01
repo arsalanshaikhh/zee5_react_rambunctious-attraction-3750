@@ -19,7 +19,7 @@ function Home() {
   // var key = "AIzaSyAKo2_8Ji4nOCiN1uTPBhgenXAbYm9XBQs";
   const getData = () => {
     axios({
-      url: `https://pure-fortress-87288.herokuapp.com/Tren`,
+      url: `https://zee5json.onrender.com/Tren`,
       method: "GET",
     })
       .then((res) => setData(res.data))
@@ -28,7 +28,7 @@ function Home() {
   // /////
   const getDatab = () => {
     axios({
-      url: `https://pure-fortress-87288.herokuapp.com/bolly`,
+      url: `https://zee5json.onrender.com/bolly`,
       method: "GET",
     })
       .then((res) => setbData(res.data))
@@ -37,7 +37,7 @@ function Home() {
   // /////
   const getDatah = () => {
     axios({
-      url: `https://pure-fortress-87288.herokuapp.com/holly`,
+      url: `https://zee5json.onrender.com/holly`,
       method: "GET",
     })
       .then((res) => sethData(res.data))

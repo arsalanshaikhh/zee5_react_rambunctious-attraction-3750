@@ -81,10 +81,11 @@ export const Signup = () => {
       align={"center"}
       justify={"center"}
       bg={useColorModeValue("gray.50", "gray.800")}
+      bg="rgb(15,6,23)"
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} minW={"sm"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading fontSize={"4xl"} textAlign={"center"}>
+          <Heading fontSize={"4xl"} textAlign={"center"} color="white">
             Sign up
           </Heading>
         </Stack>

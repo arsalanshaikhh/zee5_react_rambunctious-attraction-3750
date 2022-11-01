@@ -17,7 +17,7 @@ function News() {
   // var key = "AIzaSyAKo2_8Ji4nOCiN1uTPBhgenXAbYm9XBQs";
   const getData = () => {
     axios({
-      url: `https://pure-fortress-87288.herokuapp.com/news`,
+      url: `https://zee5json.onrender.com/news`,
       method: "GET",
     })
       .then((res) => setData(res.data))

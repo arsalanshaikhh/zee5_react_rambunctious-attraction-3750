@@ -59,10 +59,13 @@ export const Login = () => {
       align={"center"}
       justify={"center"}
       bg={useColorModeValue("gray.50", "gray.800")}
+      bg="rgb(15,6,23)"
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading fontSize={"4xl"}>Log In </Heading>
+          <Heading fontSize={"4xl"} color="white">
+            Log In
+          </Heading>
         </Stack>
         <Box
           rounded={"lg"}

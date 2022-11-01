@@ -21,7 +21,7 @@ export default function Product() {
   const getData = async () => {
     try {
       const res = await fetch(
-        `https://pure-fortress-87288.herokuapp.com/bolly/${id}`
+        `https://zee5json.onrender.com/bolly/${id}`
       );
       const data = await res.json();
       setSdata(data);
@@ -34,7 +34,7 @@ export default function Product() {
   const getDataUpcom = async () => {
     try {
       const res = await fetch(
-        `https://pure-fortress-87288.herokuapp.com/upcom`
+        `https://zee5json.onrender.com/upcom`
       );
       const data = await res.json();
       setUdata(data);

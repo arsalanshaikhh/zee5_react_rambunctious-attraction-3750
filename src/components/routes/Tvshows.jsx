@@ -14,7 +14,7 @@ function Tvshows() {
   // var key = "AIzaSyAKo2_8Ji4nOCiN1uTPBhgenXAbYm9XBQs";
   const getData = (x) => {
     return axios({
-      url: `https://pure-fortress-87288.herokuapp.com/${x}`,
+      url: `https://zee5json.onrender.com/${x}`,
       method: "GET",
     });
   };
