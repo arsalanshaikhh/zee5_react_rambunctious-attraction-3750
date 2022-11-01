@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# zee5.com clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ZEE5 is an Indian subscription video on-demand and over-the-top streaming service, run by Zee Entertainment Enterprises. It was launched in India on 14 February 2018 with content in 12 languages. The ZEE5 mobile app is available on Web, Android, iOS, Smart TVs, among other devices..
 
-## Available Scripts
+AS part of unit 4 construct week I cloned the zee5 to the best of my ability as individual in the span of 5 days.
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- ## Tech Stack: -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- <p>
+   <img src="https://img.icons8.com/color/64/000000/javascript.png"/>
+   <img src="https://img.icons8.com/color/64/000000/html-5.png"/>
+   <img src="https://img.icons8.com/color/64/000000/css3.png" />
+   <img src="https://img.icons8.com/color/64/000000/json.png"/>
+</p> -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features:
 
-### `npm test`
+1.Social Sign-up/Sign-in. 
+2. User authentication from back-end.
+3. For Data I have created Json Server and deployed it on Heroku. 
+4.Fetched the data using Axios.
+5. Added iframe so movies can play upto 4K. 
+6.With the functionality of play pause ,backward and forward 7.Also added logout functionality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1>Snapshots of our project</h1>
 
-### `npm run build`
+1. This is the Landing page of zee5.com
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![ScreenShot Tool -20220928051620](https://user-images.githubusercontent.com/88669777/192657654-48d93c8d-9002-4b8d-83bc-ee72623bb79e.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.This is Log-in
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![ScreenShot Tool -20220928050537](https://user-images.githubusercontent.com/88669777/192657734-ddd4c787-0e68-4cb8-82eb-153ee098acdd.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.This is Sign-up and Sign-in Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![ScreenShot Tool -20220928050552](https://user-images.githubusercontent.com/88669777/192657791-8d2e0d1a-7223-4ef9-92f0-ca9f920a798a.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Side Menu
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![ScreenShot Tool -20220928050616](https://user-images.githubusercontent.com/88669777/192657860-88bdec21-0d92-4b69-a3d3-279d0b8c4508.png)
 
-## Learn More
+5. Movie Page 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![ScreenShot Tool -20220928050841](https://user-images.githubusercontent.com/88669777/192657944-f6bd858c-9c85-492f-8710-d71b4086f1ed.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Upcomming Movie Page
 
-### Code Splitting
+![ScreenShot Tool -20220928050909](https://user-images.githubusercontent.com/88669777/192658025-24a322fd-d797-4938-a631-540f35247341.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. News Page
 
-### Analyzing the Bundle Size
+![ScreenShot Tool -20220928051607](https://user-images.githubusercontent.com/88669777/192658120-d92e2785-d9f0-4401-93b5-942d90ad39c4.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+8. Movies page
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![ScreenShot Tool -20220928051620](https://user-images.githubusercontent.com/88669777/192658135-ac2e1f74-e10f-4d26-9223-b4fb50bb02b7.png)
